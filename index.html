@@ -1,0 +1,90 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Título de la pestaña-->
+	<title>Registros de costos</title>
+	<link rel="stylesheet" href="themes/ParaCostos.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<!--Colocar un icono-->
+	<link rel="shortcut icon" href="img/gastosUno.png" type="image/png" />
+
+	<!--Meta etiquetas para el whatsapp-->
+	<meta property="og:title" content="Hola!!, registro gastos" />
+    <meta property="og:description" content='"Este es para registrar mis gastos"' />
+
+    <meta property="og:image" content="http://icaepp.com/gastos/costos-de-ventas.jpg" />
+
+    <meta property="og:url" content="http://icaepp.com/gastos/" />
+
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header" data-position="inline" data-theme="c">
+			<a href="#"  data-role="none">
+            <img src="img/logochapingo1.png" width="42">
+            </a>
+			<!--aca va un logo-->
+			<center>
+		        <img src="img/logo_icaepp1.png" alt="logoi-caepp" width="120px">
+		    </center>
+		    <a href="#"  data-role="none">
+            <img src="img/ciestaamlogo1.png" width="42">
+            </a>
+		</div>
+		<div data-role="content" data-theme="c">
+			<form
+                id="formularioId"
+                name="nombreFormulario" action="https://docs.google.com/forms/d/e/1FAIpQLSc1yX7WwaVN3d0DraGz2PGXRcliLjhIuU1gZEvxEXtK97Kk0Q/formResponse"
+                method="post"
+                enctype="application/x-www-form-urlencoded"
+                >
+                <label for="text-basic">Concepto</label>
+                <input name="entry.671338569" id="text-basic" type="text" value="" placeholder="En qué gasté">
+                
+                <label for="text-basic">Tipo de Gasto</label>
+                
+                <select name="entry.293634998" id="select-choice-a" data-native-menu="false">
+                <option value="Mensual">Mensual</option>
+                <option value="Deuda">Deuda</option>
+                <option value="Inversion">Inversion</option>
+                <option value="Lujo">Lujo</option>
+                <option value="Gasolina">Gasolina</option>
+                <option value="Hermanos">Hermanos</option>
+                </select>
+                
+                <label  for="numero-edad">Precio</label>
+                <input type="number" name="entry.1620162502" id="numero-edad" value="" placeholder="$$$" >
+                
+                <label for="slider2">Tarjeta</label>
+                <select name="entry.1840029071" id="slider2" data-role="slider" data-theme="a">
+                <option value="NO">NO</option>
+                <option value="SI">SI</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="slider2">Facturado</label>
+                <select name="entry.1134544097" id="slider2" data-role="slider" data-theme="a">
+                <option value="NO">NO</option>
+                <option value="SI">SI</option>
+                </select>
+                <br>
+                <br>
+               
+                <input data-theme="a" type="submit" value="Enviar registro" />    
+            </form>
+		</div>
+		<div data-role="footer" data-theme="c">
+			<center>
+			<p>www.icaepp.com</p>
+		    </center>
+		</div>
+	</div>
+</body>
+</html>
